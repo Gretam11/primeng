@@ -6,6 +6,11 @@ import {MessageService} from '../../../components/common/messageservice';
     providers: [MessageService]
 })
 export class TabViewDemo {
+    poc = {
+        detailsError: Math.random() > 0.5,
+        addressError: Math.random() > 0.5,
+        contactError: Math.random() > 0.5,
+    };
     
     constructor(private messageService: MessageService) {}
     
